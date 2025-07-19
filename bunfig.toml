@@ -1,0 +1,28 @@
+# Bun configuration for testing
+
+[test]
+# Test runner configuration
+preload = ["./tests/setup.ts"]
+coverage = true
+coverageThreshold = 90
+coverageReporter = ["text", "lcov"]
+
+# Test patterns
+root = "."
+include = ["tests/**/*.test.ts"]
+exclude = ["node_modules", ".git", "dist"]
+
+# Test timeout
+timeout = 30000
+
+# Environment
+env = { "NODE_ENV" = "test" }
+
+[install]
+# Package installation settings
+peer = true
+dev = true
+
+[run]
+# Runtime settings
+silent = false

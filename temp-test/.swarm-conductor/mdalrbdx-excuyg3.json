@@ -1,0 +1,40 @@
+{
+  "id": "mdalrbdx-excuyg3",
+  "phase": "planning",
+  "confidence": 0.5,
+  "context": "No context provided",
+  "previousStates": [],
+  "tasks": [],
+  "agents": [
+    {
+      "id": "mdalrbdx-aowvwud",
+      "name": "architect-1",
+      "type": "architect",
+      "status": "idle"
+    },
+    {
+      "id": "mdalrbdx-caolxim",
+      "name": "developer-2",
+      "type": "developer",
+      "status": "idle"
+    },
+    {
+      "id": "mdalrbdx-q40b2e8",
+      "name": "tester-3",
+      "type": "tester",
+      "status": "idle"
+    },
+    {
+      "id": "mdalrbdx-62l2p5l",
+      "name": "reviewer-4",
+      "type": "reviewer",
+      "status": "idle"
+    },
+    {
+      "id": "mdalrbdx-nuul9h1",
+      "name": "coordinator-5",
+      "type": "coordinator",
+      "status": "idle"
+    }
+  ]
+}

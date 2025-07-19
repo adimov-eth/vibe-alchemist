@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    // Strict type checking
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    
+    // Type safety
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    
+    // Modern JavaScript
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022"],
+    
+    // Output
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "removeComments": false,
+    
+    // Interop
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    
+    // Advanced
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "checkJs": false,
+    
+    // Experimental
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    
+    // Path mapping
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@types/*": ["types/*"],
+      "@core/*": ["core/*"],
+      "@phases/*": ["phases/*"],
+      "@ui/*": ["ui/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}
