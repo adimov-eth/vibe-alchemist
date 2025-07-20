@@ -1,50 +1,69 @@
-# dependencies (bun install)
-node_modules
+# Dependencies
+node_modules/
+*.pnp
+.pnp.js
 
-# output
-out
-dist
-*.tgz
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
 
-# code coverage
-coverage
-*.lcov
+# Runtime data
+.swarm-conductor/
+.claude-flow/memory.db
+.claude-flow/sessions/
+.claude/memory/
 
-# logs
-logs
-_.log
-report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
-
-# dotenv environment variable files
+# Environment variables
 .env
+.env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
 
-# caches
-.eslintcache
-.cache
-*.tsbuildinfo
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# IntelliJ based IDEs
-.idea
-
-# Finder (MacOS) folder config
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Bun specific
-bun.lockb
-.bun/
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Swarm specific
-.swarm/
-checkpoints/
-*.checkpoint
-swarm-state.json
+# Testing
+coverage/
+.nyc_output
 
-# Temporary files
+# Temporary folders
 tmp/
 temp/
-*.tmp
-*.temp
+
+# Runtime
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Bun
+.bun
